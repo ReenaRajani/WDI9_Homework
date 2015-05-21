@@ -1,0 +1,23 @@
+<h1> Its movie Time </h1>
+
+<form action="/">
+  <label for="get_title">Enter the Movie you want to checkout </label>
+
+  <input id="get_title" name="title" placeholder="movie name" autofocus> </input>
+
+  <button>GO GET</button>
+</form>
+
+<% if @movie_data %>
+<div clas="details">
+  Title : <%= @movie_data["Title"] %> <br>
+  Year : <%= @movie_data["Year"] %> <br>
+  Actors : <%= @movie_data["Actors"] %> <br>
+  Genre : <%= @movie_data["Genre"] %> <br>
+  Plot : <%= @movie_data["Plot"] %> <br>
+  
+  <div class="movie_img">
+    <img src= <%= @movie_data["Poster"] %>">
+  </div>
+<div>
+<% end %>
