@@ -1,0 +1,13 @@
+<% if @movie_data %>
+<div class="details">
+  Title : <%= @movie_data["Title"] %> <br>
+  Year : <%= @movie_data["Year"] %> <br>
+  Actors : <%= @movie_data["Actors"] %> <br>
+  Genre : <%= @movie_data["Genre"] %> <br>
+  Plot : <%= @movie_data["Plot"] %> <br>
+  
+  <div class="movie_img">
+    <img src= <%= @movie_data["Poster"] %>">
+  </div>
+<div>
+<% end %>

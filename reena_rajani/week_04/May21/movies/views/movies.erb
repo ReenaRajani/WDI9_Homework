@@ -8,16 +8,29 @@
   <button>GO GET</button>
 </form>
 
-<% if @movie_data %>
-<div clas="details">
-  Title : <%= @movie_data["Title"] %> <br>
-  Year : <%= @movie_data["Year"] %> <br>
-  Actors : <%= @movie_data["Actors"] %> <br>
-  Genre : <%= @movie_data["Genre"] %> <br>
-  Plot : <%= @movie_data["Plot"] %> <br>
+
+
+<% if @movie_list %>
+  <div class ="movie_list">
+
+    <h4> list of Movies  for keyword <%= @title %> </h4>
+      <% if @movie_list.values[0] == "False" %>
+      <p> <strong> Movie not found! </strong> </p>
+      <% end %>
+    <ul>
+    <% @movie_names.each do |movie| %>
+     <li> <%= movie %> </li>
+    <% end %>
+  </ul>
   
-  <div class="movie_img">
-    <img src= <%= @movie_data["Poster"] %>">
+    <form action="/list">
+      <label for="get_name">Enter the Movie you want to checkout </label>
+      <input id="get_name" name="moviename" placeholder=" enter  movie name " autofocus> </input>
+
+      <button>GO GET</button>
+    </form>
+    
   </div>
-<div>
-<% end %>
+
+  <% end %>
+

@@ -1,0 +1,29 @@
+
+<% if @movie_data %>
+  <div class ="movie_list">
+
+    <h4> list of Movies  for keyword <%= @title %> </h4>
+      
+      <% if @movie_data.values[0] == "False" %>
+      <p> <strong> Movie not found! </strong> </p>
+      <% end %>
+    
+    <ul>
+      <% @movie_names.each do |moviename| %>
+       <a href="/movies/details/<%= moviename %>">
+       <li> <%= moviename %> </li>
+       </a>
+      <% end %>
+    </ul>
+  
+    <!-- <form action="/list">
+      <label for="get_name">Enter the Movie you want to checkout </label>
+      <input id="get_name" name="moviename" placeholder=" enter  movie name " autofocus> </input>
+
+      <button>GO GET</button>
+    </form> -->
+    
+  </div>
+
+  <% end %>
+

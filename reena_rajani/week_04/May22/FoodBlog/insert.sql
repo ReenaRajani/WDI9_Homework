@@ -1,0 +1,7 @@
+INSERT INTO foodblog (name, description, preptime, cooktime, serves, category, ingredients, preparation, method, image) 
+VALUES ('Chocolate Brownie','A square chocolate dessert delicasy', '30 min', '1 hr' , '4' , 'Dessert' , '125 g butter,1/2 cup cocoa powder,1 1/2 cup caster sugar,2 eggs,' ,'none', 'Melt the butter in a medium saucepan.,Stir in sugar, cocoa, vanilla and salt.Remove from heat and allow to cool slightly.,Quickly whisk in eggs.Fold through sifted flour and baking powder.Bake at 170C for 25-30 minutes.Allow to cool in tin before removing.', 'https://bestrecipes-prod-public.s3-ap-southeast-2.amazonaws.com/recipe_carousel_image/https%3A/beyondtaste-prod-public.s3-ap-southeast-2.amazonaws.com/asset/10666/4570-chocbrownies.JPG%3Fts%3D1364804400');
+
+INSERT INTO foodblog (name, description, preptime, cooktime, serves, category, ingredients, preparation, method, image) 
+VALUES ('Chocolate Brownie 2','A square chocolate dessert delicasy', '30 min', '1 hr' , '4' , 'Dessert' , '125 g butter,1/2 cup cocoa powder,1 1/2 cup caster sugar,2 eggs,' ,'none', 'Melt the butter in a medium saucepan.,Stir in sugar, cocoa, vanilla and salt.Remove from heat and allow to cool slightly.,Quickly whisk in eggs.Fold through sifted flour and baking powder.Bake at 170C for 25-30 minutes.Allow to cool in tin before removing.', 'https://bestrecipes-prod-public.s3-ap-southeast-2.amazonaws.com/recipe_carousel_image/https%3A/beyondtaste-prod-public.s3-ap-southeast-2.amazonaws.com/asset/10666/4570-chocbrownies.JPG%3Fts%3D1364804400');
+
+
